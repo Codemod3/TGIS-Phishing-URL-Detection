@@ -1,5 +1,6 @@
 import requests
 import re
+import numpy as np
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from typing import Dict, Any, Optional
@@ -10,7 +11,7 @@ from src.core.logger import log
 class ContentFeatureExtractor(FeatureExtractor):
     """
     Extracts 15 features from the HTML content of a page.
-    Handles network errors gracefully by defaulting to -1.
+    Handles network errors gracefully by defaulting to np.nan for numerical features.
     """
     
     def __init__(self, timeout: int = 5):
@@ -32,9 +33,8 @@ class ContentFeatureExtractor(FeatureExtractor):
         """
         log.info(f"Extracting content features for: {url}")
         
-        features = self._get_default_features()
-        
         try:
+            features = {}
             if not html_content:
                 response = requests.get(url, timeout=self.timeout, headers=self.headers, allow_redirects=True)
                 html_content = response.text
@@ -128,14 +128,14 @@ class ContentFeatureExtractor(FeatureExtractor):
 
         except Exception as e:
             log.warning(f"Failed to extract content features for {url}: {e}")
-            return self._get_default_features(-1)
+            return self._get_default_features(np.nan)
 
-    def _get_default_features(self, default_val=0) -> Dict[str, Any]:
+    def _get_default_features(self, default_val=np.nan) -> Dict[str, Any]:
         return {
             'has_login_form': default_val,
             'num_external_links': default_val,
             'num_internal_links': default_val,
-            'external_internal_ratio': float(default_val),
+            'external_internal_ratio': default_val,
             'has_iframe': default_val,
             'num_redirects': default_val,
             'favicon_matches_domain': default_val,

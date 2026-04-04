@@ -5,8 +5,8 @@ def verify_pipeline():
     pipeline = FeaturePipeline()
     
     test_urls = [
-        "https://www.google.com",
-        "https://secure-login-facebook.account-verification.tk/login"
+        "signin.ebay.com.authentication.net",
+        "amaz0n.co"
     ]
     
     log.info("Starting Full Feature Engineering Pipeline verification...")

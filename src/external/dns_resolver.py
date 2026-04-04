@@ -50,10 +50,11 @@ class DNSResolver:
 
     def _query_record(self, domain: str, rtype: str) -> List[str]:
         """
-        Helper to safely query a specific DNS record type.
+        Helper to safely query a specific DNS record type with a strict timeout.
         """
         try:
-            answers = dns.resolver.resolve(domain, rtype)
+            # Set a 2s timeout so that failures don't bottleneck the entire pipeline
+            answers = dns.resolver.resolve(domain, rtype, lifetime=2.0)
             # Normalize list of answers based on record type
             if rtype == 'MX':
                 return [str(r.exchange).rstrip('.') for r in answers]

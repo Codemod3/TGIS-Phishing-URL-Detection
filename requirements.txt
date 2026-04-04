@@ -7,12 +7,13 @@ python-dotenv==1.0.1
 httpx==0.27.0
 
 # Machine Learning & Data Science
-scikit-learn==1.4.1.post1
+scikit-learn==1.5.0
 xgboost==2.0.3
 pandas==2.2.1
 numpy==1.26.4
 networkx==3.2.1
 pyarrow==15.0.1
+imbalanced-learn==0.12.0
 shap==0.44.1
 matplotlib==3.8.3
 seaborn==0.13.2

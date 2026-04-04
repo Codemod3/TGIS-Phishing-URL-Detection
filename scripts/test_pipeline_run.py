@@ -1,5 +1,11 @@
 import time
+import os
+import sys
 from pprint import pprint
+
+# Add the project root to sys.path to allow imports from 'src'
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.features.pipeline import FeaturePipeline
 from src.core.logger import log
 
@@ -9,8 +15,8 @@ def test_pipeline_run():
     
     # 2. Define test URLs
     test_urls = [
-        "https://www.google.com",           # Known Safe URL
-        "http://login-update-account.tk"    # Dummy Suspicious URL
+        "http://signin.ebay.com.authentication.net",
+        "http://amaz0n.co"   
     ]
     
     print("\n" + "="*80)

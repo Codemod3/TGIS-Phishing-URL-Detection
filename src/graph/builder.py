@@ -10,10 +10,10 @@ NODE_TYPES = {
         'attributes': ['url', 'label', 'first_seen', 'last_seen']
     },
     'DOMAIN': {
-        'attributes': ['domain', 'tld', 'creation_date', 'trust_score']
+        'attributes': ['domain', 'tld', 'creation_date', 'trust_score', 'label']
     },
     'IP': {
-        'attributes': ['ip_address', 'country', 'asn', 'trust_score']
+        'attributes': ['ip_address', 'country', 'asn', 'trust_score', 'label']
     },
     'REGISTRAR': {
         'attributes': ['name', 'reputation_score']
