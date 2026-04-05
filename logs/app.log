@@ -14443,3 +14443,78 @@ results.2
 2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
 2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
 2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Finished server process [21984]
+2026-04-05 10:42:06 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:42:11 | INFO     | logging:callHandlers:1762 | Started server process [12816]
+2026-04-05 10:42:11 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:42:11 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:42:11 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 10:42:11 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 10:42:11 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 10:42:11 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 10:42:11 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 10:42:12 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 10:42:12 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 10:42:12 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://kq0hgp.webwave.dev/
+2026-04-05 10:42:12 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://kq0hgp.webwave.dev/ ---
+2026-04-05 10:42:12 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://kq0hgp.webwave.dev/ ---
+2026-04-05 10:42:12 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: kq0hgp.webwave.dev
+2026-04-05 10:42:12 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 10:42:12 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 10:42:12 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 10:42:12 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://kq0hgp.webwave.dev/
+2026-04-05 10:42:14 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:42:14 | WARNING  | src.features.graph_features:extract:41 | Node kq0hgp.webwave.dev not found in graph. Returning default graph features.
+2026-04-05 10:42:14 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:42:14 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:42:14 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://kq0hgp.webwave.dev/
+2026-04-05 10:42:14 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 10:42:14 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 10:42:14 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 10:42:14 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 10:42:14 | INFO     | api.services.prediction_service:predict_single_url:179 | 💾 Results and feature vector persisted to DB (ID: 4c465078-13d0-4dd3-a904-a0fb42388af5)
+2026-04-05 10:42:14 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50806 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:42:16 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 10:42:16 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50811 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 10:42:30 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63874 - "GET /health HTTP/1.1" 200
+2026-04-05 10:42:31 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63875 - "GET /health HTTP/1.1" 200
+2026-04-05 10:42:33 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.google.com/search?client=opera-gx&q=legit+url+with+numbers+in+it&sourceid=opera&ie=UTF-8&oe=UTF-8
+2026-04-05 10:42:33 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.google.com/search?client=opera-gx&q=legit+url+with+numbers+in+it&sourceid=opera&ie=UTF-8&oe=UTF-8 ---
+2026-04-05 10:42:33 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.google.com/search?client=opera-gx&q=legit+url+with+numbers+in+it&sourceid=opera&ie=UTF-8&oe=UTF-8 ---
+2026-04-05 10:42:33 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.google.com
+2026-04-05 10:42:33 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.google.com
+2026-04-05 10:42:34 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.google.com
+2026-04-05 10:42:48 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.google.com
+2026-04-05 10:42:49 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.google.com/search?client=opera-gx&q=legit+url+with+numbers+in+it&sourceid=opera&ie=UTF-8&oe=UTF-8
+2026-04-05 10:42:51 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:42:51 | WARNING  | src.features.graph_features:extract:41 | Node www.google.com not found in graph. Returning default graph features.
+2026-04-05 10:42:51 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:42:51 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:42:52 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.google.com/search?client=opera-gx&q=legit+url+with+numbers+in+it&sourceid=opera&ie=UTF-8&oe=UTF-8
+2026-04-05 10:42:52 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 10:42:52 | INFO     | api.services.prediction_service:predict_single_url:179 | 💾 Results and feature vector persisted to DB (ID: 45d23dfa-371d-45f6-b288-40752d1fd3cc)
+2026-04-05 10:42:52 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63877 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:42:54 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 10:42:54 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63887 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 10:43:26 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59401 - "GET /health HTTP/1.1" 200
+2026-04-05 10:43:26 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59402 - "GET /health HTTP/1.1" 200
+2026-04-05 10:43:28 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://claude.ai/chat/72678119-1a87-4fc2-9a5b-792396b2057a
+2026-04-05 10:43:28 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://claude.ai/chat/72678119-1a87-4fc2-9a5b-792396b2057a ---
+2026-04-05 10:43:28 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://claude.ai/chat/72678119-1a87-4fc2-9a5b-792396b2057a ---
+2026-04-05 10:43:28 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: claude.ai
+2026-04-05 10:43:28 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: claude.ai
+2026-04-05 10:43:29 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: claude.ai
+2026-04-05 10:43:43 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: claude.ai
+2026-04-05 10:43:44 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://claude.ai/chat/72678119-1a87-4fc2-9a5b-792396b2057a
+2026-04-05 10:43:45 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:43:45 | WARNING  | src.features.graph_features:extract:41 | Node claude.ai not found in graph. Returning default graph features.
+2026-04-05 10:43:45 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:43:45 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:43:45 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://claude.ai/chat/72678119-1a87-4fc2-9a5b-792396b2057a
+2026-04-05 10:43:45 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 10:43:45 | INFO     | api.services.prediction_service:predict_single_url:179 | 💾 Results and feature vector persisted to DB (ID: 4a1d81e4-6374-43fb-8958-7bd8083f169f)
+2026-04-05 10:43:45 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59404 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:43:47 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 10:43:47 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50822 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 10:45:03 | INFO     | logging:callHandlers:1762 | 127.0.0.1:54416 - "GET /health HTTP/1.1" 200
+2026-04-05 10:45:05 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 10:45:05 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57417 - "GET /api/v1/history HTTP/1.1" 200
