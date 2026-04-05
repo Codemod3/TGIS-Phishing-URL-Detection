@@ -1,6 +1,13 @@
 import streamlit as st
+import os
+import sys
+
+# Ensure project root is in sys.path so components can import from 'src'
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from utils.api_client import APIClient
 from components.predictor import render_predictor
+from components.analytics import render_analytics_tab
 
 # 1. Page Configuration for a Premium, Professional Interface
 st.set_page_config(
@@ -52,6 +59,7 @@ st.markdown("""
 
 # 3. Initialize Global API Client
 client = APIClient()
+API_URL = client.base_url
 
 # 4. Sidebar Navigation & System Status Integration
 with st.sidebar:
@@ -86,7 +94,14 @@ with st.sidebar:
 if menu == "🔍 Real-time Analysis":
     st.title("🛡️ Phishing URL Detector")
     st.markdown("Combine Machine Learning, WHOIS Metadata, and Trust Graph Intelligence for deep link analysis.")
-    render_predictor(client)
+    
+    tab1, tab2 = st.tabs(["🔍 URL Scanner", "📊 Threat Analytics"])
+    
+    with tab1:
+        render_predictor(client)
+    
+    with tab2:
+        render_analytics_tab(API_URL)
 
 elif menu == "📊 Batch Processing":
     st.subheader("📊 Batch Analysis Mode")

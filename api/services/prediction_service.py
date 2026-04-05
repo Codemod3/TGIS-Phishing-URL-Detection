@@ -55,7 +55,7 @@ class PredictionService:
         self.safe_browsing = SafeBrowsingClient()
         self.whois_client = WHOISClient()
 
-    def predict_single_url(self, url: str) -> PredictionResponse:
+    def predict_single_url(self, url: str, db: Any = None) -> PredictionResponse:
         """
         Perform a full prediction cycle on a single URL.
         """
@@ -145,10 +145,43 @@ class PredictionService:
                 explanation=Explanation(
                     shap_values={}, 
                     reason=self._generate_logic_summary(safe_results, safe_base, safe_tgis_trust)
-                )
+                ),
+                features={**safe_base, **safe_graph}
             )
             
             log.success(f"--- ✅ Prediction Completed: {safe_results['prediction'].upper()} ---")
+
+            # --- 💾 PERSISTENCE LAYER: Save to PostgreSQL ---
+            if db:
+                try:
+                    from api.models import Prediction, FeatureVector
+                    
+                    # 1. Create Prediction Summary
+                    new_prediction = Prediction(
+                        url=url,
+                        prediction_label=safe_results['prediction'],
+                        confidence=round(safe_results['confidence'], 4),
+                        risk_score=round(safe_results['final_score'], 4),
+                        tgis_trust_score=round(safe_tgis_trust, 4)
+                    )
+                    db.add(new_prediction)
+                    db.flush() # Flush to generate the prediction_id UUID
+                    
+                    # 2. Create Detialed Feature Payload (Full 60 features)
+                    new_features = FeatureVector(
+                        prediction_id=new_prediction.id,
+                        features={**safe_base, **safe_graph}
+                    )
+                    db.add(new_features)
+                    
+                    # 3. Finalize Transaction
+                    db.commit()
+                    log.info(f"💾 Results and feature vector persisted to DB (ID: {new_prediction.id})")
+                except Exception as db_err:
+                    db.rollback()
+                    log.error(f"Database persistence failed: {str(db_err)}")
+                    # Note: We return the prediction even if persistence fails to avoid blocking the user
+            
             return response
 
         except Exception as e:

@@ -13975,3 +13975,471 @@ Registrars.
 2026-04-05 00:48:35 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: github.com
 2026-04-05 00:48:37 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
 2026-04-05 00:48:37 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60054 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 00:48:59 | INFO     | logging:callHandlers:1762 | 127.0.0.1:56188 - "GET /health HTTP/1.1" 200
+2026-04-05 00:48:59 | INFO     | logging:callHandlers:1762 | 127.0.0.1:56189 - "GET /health HTTP/1.1" 200
+2026-04-05 00:49:01 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://simmywedsjoyson.vercel.app
+2026-04-05 00:49:01 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://simmywedsjoyson.vercel.app ---
+2026-04-05 00:49:01 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://simmywedsjoyson.vercel.app ---
+2026-04-05 00:49:01 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: simmywedsjoyson.vercel.app
+2026-04-05 00:49:01 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: simmywedsjoyson.vercel.app
+2026-04-05 00:49:01 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 00:49:01 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: simmywedsjoyson.vercel.app
+2026-04-05 00:49:01 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: simmywedsjoyson.vercel.app
+2026-04-05 00:49:15 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: simmywedsjoyson.vercel.app
+2026-04-05 00:49:15 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://simmywedsjoyson.vercel.app
+2026-04-05 00:49:16 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 00:49:16 | WARNING  | src.features.graph_features:extract:41 | Node simmywedsjoyson.vercel.app not found in graph. Returning default graph features.
+2026-04-05 00:49:16 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 00:49:16 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 00:49:16 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://simmywedsjoyson.vercel.app
+2026-04-05 00:49:16 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: simmywedsjoyson.vercel.app
+2026-04-05 00:49:16 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 00:49:16 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: simmywedsjoyson.vercel.app
+2026-04-05 00:49:16 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 00:49:16 | INFO     | logging:callHandlers:1762 | 127.0.0.1:56192 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 00:49:28 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63756 - "GET /health HTTP/1.1" 200
+2026-04-05 00:49:28 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63757 - "GET /health HTTP/1.1" 200
+2026-04-05 00:49:30 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://priyankaandsharan.imagilabs.in/live
+2026-04-05 00:49:30 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://priyankaandsharan.imagilabs.in/live ---
+2026-04-05 00:49:30 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://priyankaandsharan.imagilabs.in/live ---
+2026-04-05 00:49:30 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: priyankaandsharan.imagilabs.in
+2026-04-05 00:49:30 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: priyankaandsharan.imagilabs.in
+2026-04-05 00:49:31 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: priyankaandsharan.imagilabs.in
+2026-04-05 00:49:45 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: priyankaandsharan.imagilabs.in
+2026-04-05 00:49:46 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://priyankaandsharan.imagilabs.in/live
+2026-04-05 00:49:46 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 00:49:46 | WARNING  | src.features.graph_features:extract:41 | Node priyankaandsharan.imagilabs.in not found in graph. Returning default graph features.
+2026-04-05 00:49:46 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 00:49:46 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 00:49:46 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://priyankaandsharan.imagilabs.in/live
+2026-04-05 00:49:46 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: priyankaandsharan.imagilabs.in
+2026-04-05 00:49:48 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 00:49:48 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63759 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 00:50:11 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52272 - "GET /health HTTP/1.1" 200
+2026-04-05 00:50:11 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52273 - "GET /health HTTP/1.1" 200
+2026-04-05 00:50:13 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:50:13 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging ---
+2026-04-05 00:50:13 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging ---
+2026-04-05 00:50:13 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: github.com
+2026-04-05 00:50:13 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: github.com
+2026-04-05 00:50:15 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: github.com
+2026-04-05 00:50:29 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: github.com
+2026-04-05 00:50:29 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:50:30 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 00:50:30 | WARNING  | src.features.graph_features:extract:41 | Node github.com not found in graph. Returning default graph features.
+2026-04-05 00:50:30 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 00:50:30 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 00:50:31 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:50:31 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: github.com
+2026-04-05 00:50:32 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 00:50:32 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52275 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 00:50:44 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59139 - "GET /health HTTP/1.1" 200
+2026-04-05 00:50:45 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59140 - "GET /health HTTP/1.1" 200
+2026-04-05 00:50:47 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://g1thub.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:50:47 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://g1thub.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging ---
+2026-04-05 00:50:47 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://g1thub.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging ---
+2026-04-05 00:50:47 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: g1thub.com
+2026-04-05 00:50:47 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: g1thub.com
+2026-04-05 00:50:48 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: g1thub.com
+2026-04-05 00:51:02 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: g1thub.com
+2026-04-05 00:51:03 | ERROR    | src.external.ssl_checker:check:62 | Network error checking SSL for g1thub.com: [Errno 11001] getaddrinfo failed
+2026-04-05 00:51:03 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://g1thub.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:51:03 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://g1thub.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging: HTTPSConnectionPool(host='g1thub.com', port=443): Max retries exceeded with url: /microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001E6AFEB74D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2026-04-05 00:51:03 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 00:51:03 | WARNING  | src.features.graph_features:extract:41 | Node g1thub.com not found in graph. Returning default graph features.
+2026-04-05 00:51:03 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 00:51:03 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 00:51:03 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://g1thub.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:51:03 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: g1thub.com
+2026-04-05 00:51:04 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 00:51:04 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59142 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 00:51:27 | INFO     | logging:callHandlers:1762 | 127.0.0.1:58304 - "GET /health HTTP/1.1" 200
+2026-04-05 00:51:52 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50206 - "GET /health HTTP/1.1" 200
+2026-04-05 00:51:53 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50207 - "GET /health HTTP/1.1" 200
+2026-04-05 00:51:55 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://7-eleven.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:51:55 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://7-eleven.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging ---
+2026-04-05 00:51:55 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://7-eleven.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging ---
+2026-04-05 00:51:55 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: 7-eleven.com
+2026-04-05 00:51:55 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 7-eleven.com
+2026-04-05 00:52:06 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - timed out
+2026-04-05 00:52:06 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: 7-eleven.com
+2026-04-05 00:52:20 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: 7-eleven.com
+2026-04-05 00:52:20 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://7-eleven.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:52:23 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 00:52:23 | WARNING  | src.features.graph_features:extract:41 | Node 7-eleven.com not found in graph. Returning default graph features.
+2026-04-05 00:52:23 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 00:52:23 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 00:52:23 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://7-eleven.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging
+2026-04-05 00:52:23 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 7-eleven.com
+2026-04-05 00:52:35 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - timed out
+2026-04-05 00:52:35 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 00:52:35 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50209 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 09:26:29 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 09:26:34 | INFO     | logging:callHandlers:1762 | Started server process [16740]
+2026-04-05 09:26:34 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 09:26:34 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 09:26:38 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53191 - "GET /health HTTP/1.1" 200
+2026-04-05 09:26:38 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53192 - "GET /health HTTP/1.1" 200
+2026-04-05 09:26:40 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 09:26:40 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 09:26:40 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 09:26:40 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 09:26:40 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 09:26:41 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 09:26:41 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 09:26:41 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 09:26:41 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 09:26:41 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 09:26:41 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 09:26:41 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:26:42 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:26:49 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53382 - "GET /health HTTP/1.1" 200
+2026-04-05 09:26:57 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:26:57 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 09:26:57 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 09:26:59 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 09:26:59 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 09:26:59 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 09:26:59 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 09:26:59 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 09:26:59 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 09:26:59 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:27:01 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 09:27:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53194 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 09:29:02 | INFO     | logging:callHandlers:1762 | 127.0.0.1:58842 - "GET /health HTTP/1.1" 200
+2026-04-05 09:29:02 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 09:29:03 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 09:29:03 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 09:29:03 | INFO     | logging:callHandlers:1762 | Finished server process [16740]
+2026-04-05 09:29:34 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 09:29:37 | INFO     | logging:callHandlers:1762 | Started server process [10048]
+2026-04-05 09:29:37 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 09:29:37 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 09:29:50 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51559 - "GET /health HTTP/1.1" 200
+2026-04-05 09:29:50 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51560 - "GET /health HTTP/1.1" 200
+2026-04-05 09:29:52 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 09:29:52 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 09:29:52 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 09:29:52 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 09:29:52 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 09:29:53 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 09:29:53 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 09:29:53 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 09:29:53 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 09:29:53 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 09:29:53 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 09:29:53 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:29:55 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:30:09 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:30:10 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 09:30:10 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 09:30:11 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 09:30:11 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 09:30:11 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 09:30:11 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 09:30:11 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 09:30:11 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 09:30:11 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:30:13 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 09:30:13 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51562 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 09:31:59 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 09:31:59 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 09:31:59 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 09:31:59 | INFO     | logging:callHandlers:1762 | Finished server process [10048]
+2026-04-05 09:33:20 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 09:33:24 | INFO     | logging:callHandlers:1762 | Started server process [22152]
+2026-04-05 09:33:24 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 09:33:24 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 09:33:26 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 09:33:26 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 09:33:26 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 09:33:26 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 09:33:26 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 09:33:26 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 09:33:26 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 09:33:26 | INFO     | api.routes.predict:predict_url:19 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 09:33:26 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 09:33:26 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 09:33:26 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 09:33:26 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:33:28 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:33:42 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:33:43 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 09:33:43 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 09:33:44 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 09:33:44 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 09:33:44 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 09:33:44 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 09:33:44 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 09:33:45 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 09:33:45 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 09:33:55 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - timed out
+2026-04-05 09:33:55 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: www.genrorst-dows.dnset.com
+2026-04-05 09:33:55 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 09:33:55 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61852 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:23:31 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:24:22 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:24:26 | INFO     | logging:callHandlers:1762 | Started server process [27444]
+2026-04-05 10:24:26 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:24:26 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:24:38 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:24:38 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:24:38 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:24:38 | INFO     | logging:callHandlers:1762 | Finished server process [27444]
+2026-04-05 10:25:09 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:25:12 | INFO     | logging:callHandlers:1762 | Started server process [25328]
+2026-04-05 10:25:12 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:25:12 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:25:29 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57325 - "GET /health HTTP/1.1" 200
+2026-04-05 10:25:31 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 10:25:31 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 10:25:31 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 10:25:31 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 10:25:31 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 10:25:31 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 10:25:31 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 10:25:31 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 10:25:31 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 10:25:31 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 10:25:31 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 10:25:32 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 10:25:33 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 10:25:47 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 10:25:48 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 10:25:48 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 10:25:49 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 10:25:50 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:25:50 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 10:25:50 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:25:50 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:25:50 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 10:25:50 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 10:25:50 | ERROR    | api.services.prediction_service:predict_single_url:182 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "phishing_user"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 10:25:50 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57327 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:26:13 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64477 - "GET /health HTTP/1.1" 200
+2026-04-05 10:26:19 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64480 - "GET /health HTTP/1.1" 200
+2026-04-05 10:26:19 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64481 - "GET /health HTTP/1.1" 200
+2026-04-05 10:26:21 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://kq0hgp.webwave.dev/
+2026-04-05 10:26:21 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://kq0hgp.webwave.dev/ ---
+2026-04-05 10:26:21 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://kq0hgp.webwave.dev/ ---
+2026-04-05 10:26:21 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: kq0hgp.webwave.dev
+2026-04-05 10:26:21 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 10:26:21 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 10:26:21 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 10:26:21 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: kq0hgp.webwave.dev
+2026-04-05 10:26:35 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: kq0hgp.webwave.dev
+2026-04-05 10:26:36 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://kq0hgp.webwave.dev/
+2026-04-05 10:26:38 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:26:38 | WARNING  | src.features.graph_features:extract:41 | Node kq0hgp.webwave.dev not found in graph. Returning default graph features.
+2026-04-05 10:26:38 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:26:38 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:26:38 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://kq0hgp.webwave.dev/
+2026-04-05 10:26:38 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 10:26:38 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 10:26:38 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 10:26:38 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 10:26:39 | ERROR    | api.services.prediction_service:predict_single_url:182 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "phishing_user"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 10:26:39 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64483 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:29:14 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:29:14 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:29:14 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:29:14 | INFO     | logging:callHandlers:1762 | Finished server process [25328]
+2026-04-05 10:29:26 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:29:32 | INFO     | logging:callHandlers:1762 | Started server process [5124]
+2026-04-05 10:29:32 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:29:32 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:29:34 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62789 - "GET /health HTTP/1.1" 200
+2026-04-05 10:30:51 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:30:51 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:30:51 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:30:51 | INFO     | logging:callHandlers:1762 | Finished server process [5124]
+2026-04-05 10:30:58 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:31:02 | INFO     | logging:callHandlers:1762 | Started server process [1864]
+2026-04-05 10:31:02 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:31:02 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:32:19 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:32:19 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:32:19 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:32:19 | INFO     | logging:callHandlers:1762 | Finished server process [1864]
+2026-04-05 10:32:26 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:32:31 | INFO     | logging:callHandlers:1762 | Started server process [12196]
+2026-04-05 10:32:31 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:32:31 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:36:35 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:36:35 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:36:35 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:36:35 | INFO     | logging:callHandlers:1762 | Finished server process [12196]
+2026-04-05 10:37:27 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:37:31 | INFO     | logging:callHandlers:1762 | Started server process [20604]
+2026-04-05 10:37:31 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:37:31 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:39:26 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:39:26 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:39:26 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:39:26 | INFO     | logging:callHandlers:1762 | Finished server process [20604]
+2026-04-05 10:39:31 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:39:36 | INFO     | logging:callHandlers:1762 | Started server process [3252]
+2026-04-05 10:39:36 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:39:36 | ERROR    | logging:callHandlers:1762 | Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\server.py", line 79, in serve
+    await self.startup(sockets=sockets)
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\server.py", line 90, in startup
+    await self.lifespan.startup()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 54, in startup
+    await self.startup_event.wait()
+  File "C:\Program Files\Python312\Lib\asyncio\locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 747, in lifespan
+    await receive()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2026-04-05 10:39:45 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:39:49 | INFO     | logging:callHandlers:1762 | Started server process [15868]
+2026-04-05 10:39:49 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:39:49 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:39:57 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62003 - "GET /health HTTP/1.1" 200
+2026-04-05 10:39:57 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62004 - "GET /health HTTP/1.1" 200
+2026-04-05 10:39:59 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 10:39:59 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 10:39:59 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 10:39:59 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 10:39:59 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 10:40:00 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 10:40:00 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 10:40:00 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 10:40:00 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 10:40:00 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 10:40:00 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 10:40:00 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 10:40:01 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 10:40:01 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 10:40:02 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 10:40:02 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:40:02 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 10:40:02 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:40:02 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:40:02 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 10:40:02 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 10:40:02 | INFO     | api.services.prediction_service:predict_single_url:179 | 💾 Results and feature vector persisted to DB (ID: 828ae23f-9614-4f08-ac4b-33fbbf749440)
+2026-04-05 10:40:02 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62006 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:40:05 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62010 - "GET /v1/history HTTP/1.1" 404
+2026-04-05 10:40:32 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63282 - "GET /health HTTP/1.1" 200
+2026-04-05 10:40:33 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63283 - "GET /health HTTP/1.1" 200
+2026-04-05 10:40:35 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://kq0hgp.webwave.dev/
+2026-04-05 10:40:35 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://kq0hgp.webwave.dev/ ---
+2026-04-05 10:40:35 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://kq0hgp.webwave.dev/ ---
+2026-04-05 10:40:35 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: kq0hgp.webwave.dev
+2026-04-05 10:40:35 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 10:40:35 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 10:40:35 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 10:40:35 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://kq0hgp.webwave.dev/
+2026-04-05 10:40:37 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:40:37 | WARNING  | src.features.graph_features:extract:41 | Node kq0hgp.webwave.dev not found in graph. Returning default graph features.
+2026-04-05 10:40:37 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:40:37 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:40:37 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:40:37 | INFO     | logging:callHandlers:1762 | Waiting for connections to close. (CTRL+C to force quit)
+2026-04-05 10:40:37 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://kq0hgp.webwave.dev/
+2026-04-05 10:40:37 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 10:40:37 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 10:40:37 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 10:40:37 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 10:40:38 | INFO     | api.services.prediction_service:predict_single_url:179 | 💾 Results and feature vector persisted to DB (ID: 4d445249-998e-43f3-9b08-6abd5053cc13)
+2026-04-05 10:40:38 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63285 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:40:38 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:40:38 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:40:38 | INFO     | logging:callHandlers:1762 | Finished server process [15868]
+2026-04-05 10:40:43 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:40:47 | INFO     | logging:callHandlers:1762 | Started server process [27844]
+2026-04-05 10:40:47 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:40:47 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:40:47 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63292 - "GET /v1/history HTTP/1.1" 404
+2026-04-05 10:41:02 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:41:02 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:41:02 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:41:02 | INFO     | logging:callHandlers:1762 | Finished server process [27844]
+2026-04-05 10:41:10 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 10:41:15 | INFO     | logging:callHandlers:1762 | Started server process [21984]
+2026-04-05 10:41:15 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 10:41:15 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 10:41:15 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 10:41:15 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: 2 validation errors for HistoryResponse
+results.0
+  Input should be a valid dictionary or instance of HistoryItem [type=model_type, input_value=<Prediction(url='https://...dev/...', label='safe')>, input_type=Prediction]
+    For further information visit https://errors.pydantic.dev/2.5/v/model_type
+results.1
+  Input should be a valid dictionary or instance of HistoryItem [type=model_type, input_value=<Prediction(url='https://......', label='phishing')>, input_type=Prediction]
+    For further information visit https://errors.pydantic.dev/2.5/v/model_type
+2026-04-05 10:41:15 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59255 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 10:41:35 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55350 - "GET /health HTTP/1.1" 200
+2026-04-05 10:41:35 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55351 - "GET /health HTTP/1.1" 200
+2026-04-05 10:41:37 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 10:41:37 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 10:41:37 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 10:41:37 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 10:41:37 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 10:41:37 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 10:41:37 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-05 10:41:37 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 10:41:37 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 10:41:37 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 10:41:37 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 10:41:37 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 10:41:38 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 10:41:38 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 10:41:40 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 10:41:40 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 10:41:40 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 10:41:40 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 10:41:40 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 10:41:40 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 10:41:40 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 10:41:40 | INFO     | api.services.prediction_service:predict_single_url:179 | 💾 Results and feature vector persisted to DB (ID: 8e679ad0-7fcc-462c-a719-255a35d17fa4)
+2026-04-05 10:41:40 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55353 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 10:41:43 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 10:41:43 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: 3 validation errors for HistoryResponse
+results.0
+  Input should be a valid dictionary or instance of HistoryItem [type=model_type, input_value=<Prediction(url='https://......', label='phishing')>, input_type=Prediction]
+    For further information visit https://errors.pydantic.dev/2.5/v/model_type
+results.1
+  Input should be a valid dictionary or instance of HistoryItem [type=model_type, input_value=<Prediction(url='https://...dev/...', label='safe')>, input_type=Prediction]
+    For further information visit https://errors.pydantic.dev/2.5/v/model_type
+results.2
+  Input should be a valid dictionary or instance of HistoryItem [type=model_type, input_value=<Prediction(url='https://......', label='phishing')>, input_type=Prediction]
+    For further information visit https://errors.pydantic.dev/2.5/v/model_type
+2026-04-05 10:41:43 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55357 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55364 - "GET /health HTTP/1.1" 200
+2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 10:42:01 | INFO     | logging:callHandlers:1762 | Finished server process [21984]

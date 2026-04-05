@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import predict, health
+from api.routes import predict, health, history
 
 # Initializing FastAPI application following ARCHITECTURE.md specifications
 app = FastAPI(
@@ -8,6 +8,18 @@ app = FastAPI(
     version="1.0.0",
     description="Elite phishing detection combining ML and Trust Graph Intelligence (TGIS)"
 )
+
+@app.on_event("startup")
+def setup_database():
+    """Ensures database tables are created on startup without crashing the app."""
+    try:
+        from api.database import engine, Base
+        import api.models
+        Base.metadata.create_all(bind=engine)
+        print("✅ Database schema synchronized successfully.")
+    except Exception as e:
+        print(f"⚠️ Database connection failed: {e}")
+        print("System will continue without persistence layer.")
 
 # CORS Configuration
 app.add_middleware(
@@ -21,6 +33,7 @@ app.add_middleware(
 # Including Routers
 app.include_router(predict.router)
 app.include_router(health.router)
+app.include_router(history.router)
 
 @app.get("/")
 def root():

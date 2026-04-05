@@ -48,6 +48,7 @@ class PredictionResponse(BaseModel):
     graph_analysis: GraphAnalysis
     top_features: List[TopFeature]
     explanation: Optional[Explanation] = None
+    features: Dict[str, Any] = Field(default={}, description="Raw 60-feature vector for deep analysis")
 
 # Batch Prediction Components
 class BatchResult(BaseModel):
@@ -94,3 +95,19 @@ class HealthResponse(BaseModel):
     uptime_seconds: int = Field(..., description="System uptime in seconds")
     components: HealthComponents
     metrics: HealthMetrics
+
+# History Components
+class HistoryItem(BaseModel):
+    model_config = ConfigDict(from_attributes=True, protected_namespaces=())
+    id: Any = Field(..., description="UUID of the prediction record")
+    url: str = Field(..., description="The URL analyzed")
+    prediction_label: str = Field(..., description="Verdict: 'phishing' or 'safe'")
+    confidence: float = Field(..., description="Confidence score")
+    risk_score: float = Field(..., description="Overall risk score")
+    tgis_trust_score: float = Field(..., description="TGIS trust score")
+    created_at: Any = Field(..., description="Timestamp of the analysis")
+
+class HistoryResponse(BaseModel):
+    """List of historical analysis results."""
+    total: int = Field(..., description="Total number of results returned")
+    results: List[HistoryItem]

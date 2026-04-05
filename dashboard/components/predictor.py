@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import time
 from typing import Dict, Any
+from components.explainer import render_deep_dive
 
 def render_predictor(client):
     """
@@ -95,5 +96,7 @@ def render_predictor(client):
                 api = result["api_checks"]
                 sb_color = "🔴" if api["safe_browsing"]["is_flagged"] else "🟢"
                 st.write(f"{sb_color} **Safe Browsing:** {'FLAGGED' if api['safe_browsing']['is_flagged'] else 'CLEAN'}")
-                st.write(f"📅 **Domain Age:** `{api['whois']['domain_age_days']} days`")
                 st.write(f"🏢 **Registrar:** `{api['whois']['registrar'] or 'N/A'}`")
+
+            # 4. Deep Dive Analysis (Phase 7 Explainer)
+            render_deep_dive(result.get("features", {}))
