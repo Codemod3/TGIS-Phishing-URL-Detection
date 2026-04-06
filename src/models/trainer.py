@@ -61,17 +61,23 @@ class ModelTrainer:
         y_test_raw = df_test_raw['label']
 
         # 3. Preprocessing (Fit on Train, Transform Test)
-        log.info("Preprocessing and Normalizing Feature Vectors...")
+        log.info(f"Preprocessing {X_train_raw.shape[1]} features...")
         X_train_processed = self.preprocessor.fit_transform(X_train_raw)
         X_test_processed = self.preprocessor.transform(X_test_raw)
         
+        log.debug(f"X_train_raw shape: {X_train_raw.shape}")
+        log.debug(f"X_train_processed shape: {X_train_processed.shape}")
+        log.debug(f"FEATURE_ORDER length: {len(FEATURE_ORDER)}")
+
         # Save Preprocessor artifacts
         self.preprocessor.save(self.model_dir)
 
         # 4. Split for Validation and Apply SMOTE
         # Split train_raw further to get a validation set for XGBoost early stopping
+        # CRITICAL: We recreate the DataFrame with FEATURE_ORDER so the model stores the right names.
+        X_df_named = pd.DataFrame(X_train_processed, columns=FEATURE_ORDER)
         X_train_sub, X_val, X_test_ignore, y_train_sub, y_val, y_test_ignore = self.splitter.train_val_test_split(
-            pd.DataFrame(X_train_processed), y_train_raw, test_size=0.1, val_size=0.1
+            X_df_named, y_train_raw, test_size=0.1, val_size=0.1
         )
         # Note: splitter.train_val_test_split returns 70/15/15 by default, 
         # but here we just need a simple split. We'll use apply_smote on X_train_sub.

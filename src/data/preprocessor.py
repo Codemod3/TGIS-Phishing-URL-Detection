@@ -13,7 +13,10 @@ class DataPreprocessor:
     """
     
     def __init__(self):
-        self.imputer = SimpleImputer(strategy='constant', fill_value=-1)
+        # keep_empty_features=True ensures that if a feature is all NaNs during fit,
+        # it is NOT dropped from the output. This is vital for consistency between 
+        # training (on small datasets) and live inference.
+        self.imputer = SimpleImputer(strategy='constant', fill_value=-1, keep_empty_features=True)
         self.scaler = StandardScaler()
         self.is_fitted = False
 

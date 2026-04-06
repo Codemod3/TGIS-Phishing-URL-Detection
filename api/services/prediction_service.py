@@ -73,16 +73,15 @@ class PredictionService:
             combined_dict = {**base_features, **graph_features}
             
             # 4. Vector Preprocessing & Model Inference
-            # Ensure strict feature alignment using the model's internal schema
-            # This prevents the "Feature names mismatch" 500 error in Preprocessor
+            # Ensure strict feature alignment using the master architectural order (60 features)
+            # This is critical because the DataPreprocessor (imputer/scaler) was fitted on FEATURE_ORDER.
+            # Even if the model has numeric feature names (0, 1, 2...), the preprocessor expects 
+            # named columns like 'anomaly_score_in_cluster'.
             df_features = pd.DataFrame([combined_dict])
+            df_features = df_features.reindex(columns=FEATURE_ORDER, fill_value=0)
             
-            if hasattr(self.ensemble_predictor.rf_model, 'feature_names_in_'):
-                expected_cols = list(self.ensemble_predictor.rf_model.feature_names_in_)
-                df_features = df_features.reindex(columns=expected_cols, fill_value=0)
-            else:
-                # Fallback to the master architectural order if model names aren't available
-                df_features = df_features.reindex(columns=FEATURE_ORDER, fill_value=0)
+            # --- 🔍 DEBUG: Log feature columns to verify alignment ---
+            log.debug(f"Input Features for Transform (count={len(df_features.columns)}): {list(df_features.columns)[:5]}...")
             
             # Impute and Scale
             processed_vector = self.preprocessor.transform(df_features)
