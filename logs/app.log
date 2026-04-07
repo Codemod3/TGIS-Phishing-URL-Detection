@@ -14518,3 +14518,141 @@ results.2
 2026-04-05 10:45:03 | INFO     | logging:callHandlers:1762 | 127.0.0.1:54416 - "GET /health HTTP/1.1" 200
 2026-04-05 10:45:05 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
 2026-04-05 10:45:05 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57417 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:49:46 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-07 17:49:52 | INFO     | logging:callHandlers:1762 | Started server process [21956]
+2026-04-07 17:49:52 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-07 17:49:56 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-07 17:49:58 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65377 - "GET /health HTTP/1.1" 200
+2026-04-07 17:49:58 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65378 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:00 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65380 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:00 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-07 17:50:00 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-07 17:50:00 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-07 17:50:00 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-07 17:50:00 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-07 17:50:01 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-07 17:50:01 | INFO     | src.data.preprocessor:load:71 | Preprocessor models loaded from data/models
+2026-04-07 17:50:01 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for PS C:\Users\frank\OneDrive\Desktop\Projects\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n)
+2026-04-07 17:50:01 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: PS C:\Users\frank\OneDrive\Desktop\Projects\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n) ---
+2026-04-07 17:50:01 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: PS C:\Users\frank\OneDrive\Desktop\Projects\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n) ---
+2026-04-07 17:50:01 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: 
+2026-04-07 17:50:01 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 
+2026-04-07 17:50:01 | ERROR    | src.external.whois_client:lookup:50 | WHOIS lookup failed for : Whois command returned no output
+2026-04-07 17:50:01 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: 
+2026-04-07 17:50:02 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:50:06 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:06 | INFO     | logging:callHandlers:1762 | 127.0.0.1:56768 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:50:15 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: 
+2026-04-07 17:50:27 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60141 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:28 | ERROR    | src.external.ssl_checker:check:62 | Network error checking SSL for : [WinError 10061] No connection could be made because the target machine actively refused it
+2026-04-07 17:50:28 | INFO     | src.features.content_features:extract:34 | Extracting content features for: PS C:\Users\frank\OneDrive\Desktop\Projects\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n)
+2026-04-07 17:50:28 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for PS C:\Users\frank\OneDrive\Desktop\Projects\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n): No connection adapters were found for "PS C:\\Users\\frank\\OneDrive\\Desktop\\Projects\\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n)"
+2026-04-07 17:50:28 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:50:28 | WARNING  | src.features.graph_features:extract:41 | Node  not found in graph. Returning default graph features.
+2026-04-07 17:50:28 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:50:28 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:50:28 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: PS C:\Users\frank\OneDrive\Desktop\Projects\Phishing URL Detection> git reset --hard 3845c3f7eb555b4d6e09cf90626f64a2b9ef95a0 Unlink of file 'logs/app.log' failed. Should I try again? (y/n) y Unlink of file 'logs/app.log' failed. Should I try again? (y/n)
+2026-04-07 17:50:28 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 
+2026-04-07 17:50:28 | ERROR    | src.external.whois_client:lookup:50 | WHOIS lookup failed for : Whois command returned no output
+2026-04-07 17:50:28 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-07 17:50:29 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:50:32 | ERROR    | api.services.prediction_service:predict_single_url:182 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:32 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65382 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:50:33 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:33 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60144 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:50:36 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60149 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:38 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:50:43 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:43 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60152 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:50:43 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60156 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:45 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:50:47 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60161 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:49 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:50:49 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:49 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60159 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:50:51 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60168 - "GET /health HTTP/1.1" 200
+2026-04-07 17:50:53 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:53 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60164 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:50:53 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:50:57 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:50:57 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60172 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:50:58 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61640 - "GET /health HTTP/1.1" 200
+2026-04-07 17:51:00 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64327 - "GET /health HTTP/1.1" 200
+2026-04-07 17:51:02 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:51:04 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64333 - "GET /health HTTP/1.1" 200
+2026-04-07 17:51:04 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64334 - "GET /health HTTP/1.1" 200
+2026-04-07 17:51:06 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:51:06 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64331 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:51:06 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for www.bankofamerica.com.secure-login.net
+2026-04-07 17:51:06 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: www.bankofamerica.com.secure-login.net ---
+2026-04-07 17:51:06 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: www.bankofamerica.com.secure-login.net ---
+2026-04-07 17:51:06 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: 
+2026-04-07 17:51:06 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 
+2026-04-07 17:51:06 | ERROR    | src.external.whois_client:lookup:50 | WHOIS lookup failed for : Whois command returned no output
+2026-04-07 17:51:06 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: 
+2026-04-07 17:51:19 | ERROR    | src.external.ssl_checker:check:62 | Network error checking SSL for : [WinError 10061] No connection could be made because the target machine actively refused it
+2026-04-07 17:51:19 | INFO     | src.features.content_features:extract:34 | Extracting content features for: www.bankofamerica.com.secure-login.net
+2026-04-07 17:51:19 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for www.bankofamerica.com.secure-login.net: Invalid URL 'www.bankofamerica.com.secure-login.net': No schema supplied. Perhaps you meant http://www.bankofamerica.com.secure-login.net?
+2026-04-07 17:51:19 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:51:19 | WARNING  | src.features.graph_features:extract:41 | Node  not found in graph. Returning default graph features.
+2026-04-07 17:51:19 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:51:19 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:51:20 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: www.bankofamerica.com.secure-login.net
+2026-04-07 17:51:20 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 
+2026-04-07 17:51:20 | ERROR    | src.external.whois_client:lookup:50 | WHOIS lookup failed for : Whois command returned no output
+2026-04-07 17:51:20 | SUCCESS  | api.services.prediction_service:predict_single_url:152 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-07 17:51:24 | ERROR    | api.services.prediction_service:predict_single_url:182 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:51:24 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64337 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:51:27 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:51:31 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:51:31 | INFO     | logging:callHandlers:1762 | 127.0.0.1:64347 - "GET /api/v1/history HTTP/1.1" 200
