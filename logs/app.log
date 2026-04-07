@@ -14518,3 +14518,843 @@ results.2
 2026-04-05 10:45:03 | INFO     | logging:callHandlers:1762 | 127.0.0.1:54416 - "GET /health HTTP/1.1" 200
 2026-04-05 10:45:05 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
 2026-04-05 10:45:05 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57417 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:25:06 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 12:25:09 | INFO     | logging:callHandlers:1762 | Started server process [27000]
+2026-04-05 12:25:09 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:25:09 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:28:51 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 12:28:51 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:28:51 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:28:51 | INFO     | logging:callHandlers:1762 | Finished server process [27000]
+2026-04-05 12:28:55 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 12:28:58 | INFO     | logging:callHandlers:1762 | Started server process [16036]
+2026-04-05 12:28:58 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:28:58 | ERROR    | logging:callHandlers:1762 | Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\server.py", line 79, in serve
+    await self.startup(sockets=sockets)
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\server.py", line 90, in startup
+    await self.lifespan.startup()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 54, in startup
+    await self.startup_event.wait()
+  File "C:\Program Files\Python312\Lib\asyncio\locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 747, in lifespan
+    await receive()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2026-04-05 12:29:03 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 12:29:06 | INFO     | logging:callHandlers:1762 | Started server process [4824]
+2026-04-05 12:29:06 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:29:06 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:30:41 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 12:30:43 | INFO     | logging:callHandlers:1762 | Started server process [30640]
+2026-04-05 12:30:43 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:30:43 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:30:43 | ERROR    | logging:callHandlers:1762 | [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): only one usage of each socket address (protocol/network address/port) is normally permitted
+2026-04-05 12:30:43 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:30:43 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:31:12 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 12:32:20 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:32:23 | INFO     | logging:callHandlers:1762 | Started server process [18188]
+2026-04-05 12:32:23 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:32:23 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:32:50 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 12:32:50 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:32:50 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:32:50 | INFO     | logging:callHandlers:1762 | Finished server process [4824]
+2026-04-05 12:33:19 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:33:22 | INFO     | logging:callHandlers:1762 | Started server process [22276]
+2026-04-05 12:33:22 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:33:22 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:33:53 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 12:33:53 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:33:53 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:33:53 | INFO     | logging:callHandlers:1762 | Finished server process [22276]
+2026-04-05 12:36:57 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 12:36:58 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:36:58 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:36:58 | INFO     | logging:callHandlers:1762 | Finished server process [18188]
+2026-04-05 12:37:02 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:37:05 | INFO     | logging:callHandlers:1762 | Started server process [31232]
+2026-04-05 12:37:05 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:37:09 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:37:09 | ERROR    | logging:callHandlers:1762 | [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): only one usage of each socket address (protocol/network address/port) is normally permitted
+2026-04-05 12:37:09 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:37:09 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:37:19 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:37:21 | INFO     | logging:callHandlers:1762 | Started server process [7704]
+2026-04-05 12:37:21 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:37:25 | ERROR    | logging:callHandlers:1762 | Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\server.py", line 79, in serve
+    await self.startup(sockets=sockets)
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\server.py", line 90, in startup
+    await self.lifespan.startup()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 54, in startup
+    await self.startup_event.wait()
+  File "C:\Program Files\Python312\Lib\asyncio\locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 747, in lifespan
+    await receive()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2026-04-05 12:37:56 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:37:58 | INFO     | logging:callHandlers:1762 | Started server process [15584]
+2026-04-05 12:37:58 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:38:02 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:38:38 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:38:40 | INFO     | logging:callHandlers:1762 | Started server process [25316]
+2026-04-05 12:38:40 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:38:44 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:38:44 | INFO     | logging:callHandlers:1762 | Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-04-05 12:39:12 | INFO     | src.models.random_forest:__init__:28 | Initialized PhishingRandomForest with 500 estimators.
+2026-04-05 12:39:12 | INFO     | src.models.xgboost_model:__init__:32 | Initialized PhishingXGBoost with histogram-based tree method.
+2026-04-05 12:39:12 | INFO     | __main__:train_all:39 | --- 🚀 Initializing Model Training Pipeline ---
+2026-04-05 12:39:12 | INFO     | __main__:train_all:42 | Loading training and testing datasets...
+2026-04-05 12:39:12 | INFO     | src.data.loader:load_data:33 | Loaded Parquet dataset: data/processed\train.parquet (33 rows)
+2026-04-05 12:39:12 | INFO     | src.data.loader:load_data:33 | Loaded Parquet dataset: data/processed\test.parquet (9 rows)
+2026-04-05 12:39:12 | INFO     | __main__:train_all:54 | Standardizing training schema (60 columns)...
+2026-04-05 12:39:12 | INFO     | __main__:train_all:64 | Preprocessing and Normalizing Feature Vectors...
+2026-04-05 12:39:12 | INFO     | src.data.preprocessor:fit_transform:30 | Preprocessing 60 features for 33 samples...
+2026-04-05 12:39:12 | SUCCESS  | src.data.preprocessor:fit_transform:39 | Data preprocessing completed (Fit & Transform).
+2026-04-05 12:39:12 | INFO     | src.data.preprocessor:save:61 | Preprocessor models saved to data/models
+2026-04-05 12:39:44 | INFO     | src.models.random_forest:__init__:28 | Initialized PhishingRandomForest with 500 estimators.
+2026-04-05 12:39:44 | INFO     | src.models.xgboost_model:__init__:32 | Initialized PhishingXGBoost with histogram-based tree method.
+2026-04-05 12:39:44 | INFO     | __main__:train_all:39 | --- 🚀 Initializing Model Training Pipeline ---
+2026-04-05 12:39:44 | INFO     | __main__:train_all:42 | Loading training and testing datasets...
+2026-04-05 12:39:44 | INFO     | src.data.loader:load_data:33 | Loaded Parquet dataset: data/processed\train.parquet (33 rows)
+2026-04-05 12:39:44 | INFO     | src.data.loader:load_data:33 | Loaded Parquet dataset: data/processed\test.parquet (9 rows)
+2026-04-05 12:39:44 | INFO     | __main__:train_all:54 | Standardizing training schema (60 columns)...
+2026-04-05 12:39:44 | INFO     | __main__:train_all:64 | Preprocessing 60 features...
+2026-04-05 12:39:44 | INFO     | src.data.preprocessor:fit_transform:30 | Preprocessing 60 features for 33 samples...
+2026-04-05 12:39:44 | SUCCESS  | src.data.preprocessor:fit_transform:39 | Data preprocessing completed (Fit & Transform).
+2026-04-05 12:39:44 | INFO     | src.data.preprocessor:save:61 | Preprocessor models saved to data/models
+2026-04-05 12:41:08 | INFO     | src.models.random_forest:__init__:28 | Initialized PhishingRandomForest with 500 estimators.
+2026-04-05 12:41:08 | INFO     | src.models.xgboost_model:__init__:32 | Initialized PhishingXGBoost with histogram-based tree method.
+2026-04-05 12:41:08 | INFO     | __main__:train_all:39 | --- 🚀 Initializing Model Training Pipeline ---
+2026-04-05 12:41:08 | INFO     | __main__:train_all:42 | Loading training and testing datasets...
+2026-04-05 12:41:08 | INFO     | src.data.loader:load_data:33 | Loaded Parquet dataset: data/processed\train.parquet (33 rows)
+2026-04-05 12:41:08 | INFO     | src.data.loader:load_data:33 | Loaded Parquet dataset: data/processed\test.parquet (9 rows)
+2026-04-05 12:41:08 | INFO     | __main__:train_all:54 | Standardizing training schema (60 columns)...
+2026-04-05 12:41:08 | INFO     | __main__:train_all:64 | Preprocessing 60 features...
+2026-04-05 12:41:08 | INFO     | src.data.preprocessor:fit_transform:33 | Preprocessing 60 features for 33 samples...
+2026-04-05 12:41:08 | SUCCESS  | src.data.preprocessor:fit_transform:42 | Data preprocessing completed (Fit & Transform).
+2026-04-05 12:41:08 | INFO     | src.data.preprocessor:save:64 | Preprocessor models saved to data/models
+2026-04-05 12:41:08 | INFO     | src.data.splitter:train_val_test_split:29 | Splitting data (70/15/15) for 33 samples...
+2026-04-05 12:41:08 | SUCCESS  | src.data.splitter:train_val_test_split:43 | Split completed: Train(25), Val(4), Test(4)
+2026-04-05 12:41:08 | INFO     | src.data.splitter:apply_smote:59 | Applying SMOTE to balance training classes...
+2026-04-05 12:41:08 | INFO     | src.data.splitter:apply_smote:76 | Small minority class detected (2). Adjusting SMOTE k_neighbors to 1.
+2026-04-05 12:41:09 | SUCCESS  | src.data.splitter:apply_smote:83 | SMOTE applied. Balanced distribution: {0: 23, 1: 23}
+2026-04-05 12:41:09 | INFO     | __main__:train_all:88 | Training Random Forest...
+2026-04-05 12:41:09 | INFO     | src.models.random_forest:fit:32 | Training Random Forest on 46 samples...
+2026-04-05 12:41:10 | SUCCESS  | src.models.random_forest:fit:35 | RF Training Complete. OOB Score: 1.0000
+2026-04-05 12:41:10 | INFO     | __main__:train_all:92 | Training XGBoost...
+2026-04-05 12:41:10 | INFO     | src.models.xgboost_model:fit:39 | Training XGBoost on 46 samples...
+2026-04-05 12:41:10 | INFO     | src.models.xgboost_model:fit:42 | Early stopping enabled for XGBoost training.
+2026-04-05 12:41:10 | SUCCESS  | src.models.xgboost_model:fit:51 | XGBoost Training Complete.
+2026-04-05 12:41:10 | INFO     | __main__:_evaluate_and_log:107 | 
+==================================================
+📈 FINAL TEST SET EVALUATION
+==================================================
+2026-04-05 12:41:11 | INFO     | __main__:_evaluate_and_log:122 | [Random Forest] Acc: 0.8889 | F1: 0.0000 | AUC: 1.0000
+2026-04-05 12:41:11 | INFO     | __main__:_evaluate_and_log:122 | [XGBoost] Acc: 0.8889 | F1: 0.0000 | AUC: 0.3750
+2026-04-05 12:41:11 | INFO     | __main__:train_all:99 | Saving model artifacts to data/models...
+2026-04-05 12:41:11 | SUCCESS  | __main__:train_all:103 | 🎉 Model Training Pipeline Completed Successfully.
+2026-04-05 12:42:29 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:42:31 | INFO     | logging:callHandlers:1762 | Started server process [12740]
+2026-04-05 12:42:31 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:42:35 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 12:42:35 | INFO     | logging:callHandlers:1762 | Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-04-05 12:43:57 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52047 - "GET /health HTTP/1.1" 200
+2026-04-05 12:43:59 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:44:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53530 - "GET /health HTTP/1.1" 200
+2026-04-05 12:44:02 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53531 - "GET /health HTTP/1.1" 200
+2026-04-05 12:44:03 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:44:03 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61175 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:44:04 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 12:44:04 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 12:44:04 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 12:44:04 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 12:44:04 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 12:44:04 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 12:44:04 | INFO     | src.data.preprocessor:load:74 | Preprocessor models loaded from data/models
+2026-04-05 12:44:04 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://kq0hgp.webwave.dev/
+2026-04-05 12:44:04 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://kq0hgp.webwave.dev/ ---
+2026-04-05 12:44:04 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://kq0hgp.webwave.dev/ ---
+2026-04-05 12:44:04 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: kq0hgp.webwave.dev
+2026-04-05 12:44:04 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 12:44:04 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 12:44:04 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 12:44:04 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: kq0hgp.webwave.dev
+2026-04-05 12:44:18 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: kq0hgp.webwave.dev
+2026-04-05 12:44:19 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://kq0hgp.webwave.dev/
+2026-04-05 12:44:21 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:44:21 | WARNING  | src.features.graph_features:extract:41 | Node kq0hgp.webwave.dev not found in graph. Returning default graph features.
+2026-04-05 12:44:21 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:44:21 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:44:21 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://kq0hgp.webwave.dev/
+2026-04-05 12:44:21 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: kq0hgp.webwave.dev
+2026-04-05 12:44:21 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 12:44:21 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: kq0hgp.webwave.dev
+2026-04-05 12:44:21 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 12:44:25 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:44:25 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53533 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:44:27 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:44:31 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:44:31 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57107 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:44:32 | INFO     | logging:callHandlers:1762 | 127.0.0.1:57112 - "GET /health HTTP/1.1" 200
+2026-04-05 12:44:34 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:44:34 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50577 - "GET /health HTTP/1.1" 200
+2026-04-05 12:44:35 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50578 - "GET /health HTTP/1.1" 200
+2026-04-05 12:44:37 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 12:44:37 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 12:44:37 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 12:44:37 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 12:44:37 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:44:38 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:44:38 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:44:38 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50575 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:44:52 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:44:52 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51527 - "GET /health HTTP/1.1" 200
+2026-04-05 12:44:53 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 12:44:53 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 12:44:54 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 12:44:54 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:44:54 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 12:44:54 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:44:54 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:44:54 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 12:44:54 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:44:54 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:44:55 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 12:44:58 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:44:58 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51533 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:44:59 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:44:59 | INFO     | logging:callHandlers:1762 | 127.0.0.1:50581 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:45:02 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:45:06 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:45:06 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55776 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:45:22 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60795 - "GET /health HTTP/1.1" 200
+2026-04-05 12:45:24 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:45:26 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53542 - "GET /health HTTP/1.1" 200
+2026-04-05 12:45:28 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:45:28 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53538 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:45:29 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW
+2026-04-05 12:45:29 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW ---
+2026-04-05 12:45:29 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW ---
+2026-04-05 12:45:29 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: mail.google.com
+2026-04-05 12:45:29 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: mail.google.com
+2026-04-05 12:45:30 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: mail.google.com
+2026-04-05 12:45:34 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63125 - "GET /health HTTP/1.1" 200
+2026-04-05 12:45:36 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW
+2026-04-05 12:45:36 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW ---
+2026-04-05 12:45:36 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW ---
+2026-04-05 12:45:36 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: mail.google.com
+2026-04-05 12:45:36 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: mail.google.com
+2026-04-05 12:45:37 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: mail.google.com
+2026-04-05 12:45:44 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: mail.google.com
+2026-04-05 12:45:44 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW
+2026-04-05 12:45:49 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW: HTTPSConnectionPool(host='mail.google.com', port=443): Max retries exceeded with url: /mail/u/0/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000206509E1D90>, 'Connection to mail.google.com timed out. (connect timeout=5)'))
+2026-04-05 12:45:49 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:45:49 | WARNING  | src.features.graph_features:extract:41 | Node mail.google.com not found in graph. Returning default graph features.
+2026-04-05 12:45:49 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:45:49 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:45:50 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW
+2026-04-05 12:45:50 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: mail.google.com
+2026-04-05 12:45:51 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 12:45:51 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: mail.google.com
+2026-04-05 12:45:52 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW
+2026-04-05 12:45:54 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:45:54 | WARNING  | src.features.graph_features:extract:41 | Node mail.google.com not found in graph. Returning default graph features.
+2026-04-05 12:45:54 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:45:54 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:45:54 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLFnhgltrZQjWfRTLQFzcKdvW
+2026-04-05 12:45:54 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: mail.google.com
+2026-04-05 12:45:55 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:45:55 | INFO     | logging:callHandlers:1762 | 127.0.0.1:53544 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:45:55 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 12:46:00 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:46:00 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55747 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:46:02 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:46:06 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:46:06 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51405 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:46:17 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59246 - "GET /health HTTP/1.1" 200
+2026-04-05 12:46:18 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59247 - "GET /health HTTP/1.1" 200
+2026-04-05 12:46:20 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25
+2026-04-05 12:46:20 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25 ---
+2026-04-05 12:46:20 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25 ---
+2026-04-05 12:46:20 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.google.com
+2026-04-05 12:46:20 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.google.com
+2026-04-05 12:46:30 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - timed out
+2026-04-05 12:46:31 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: www.google.com
+2026-04-05 12:46:31 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.google.com
+2026-04-05 12:46:45 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.google.com
+2026-04-05 12:46:45 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25
+2026-04-05 12:46:46 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:46:46 | WARNING  | src.features.graph_features:extract:41 | Node www.google.com not found in graph. Returning default graph features.
+2026-04-05 12:46:46 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:46:46 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:46:46 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25
+2026-04-05 12:46:46 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.google.com
+2026-04-05 12:46:57 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - timed out
+2026-04-05 12:46:57 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: www.google.com
+2026-04-05 12:46:57 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 12:47:01 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:47:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59249 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:47:03 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:47:07 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:47:07 | INFO     | logging:callHandlers:1762 | 127.0.0.1:56820 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:48:08 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59756 - "GET /health HTTP/1.1" 200
+2026-04-05 12:48:13 | INFO     | logging:callHandlers:1762 | 127.0.0.1:55017 - "GET /health HTTP/1.1" 200
+2026-04-05 12:48:15 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:48:17 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51096 - "GET /health HTTP/1.1" 200
+2026-04-05 12:48:17 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51097 - "GET /health HTTP/1.1" 200
+2026-04-05 12:48:19 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:48:19 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51088 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:48:19 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev/BancoInternacional.html
+2026-04-05 12:48:19 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev/BancoInternacional.html ---
+2026-04-05 12:48:19 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev/BancoInternacional.html ---
+2026-04-05 12:48:19 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:19 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:19 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 12:48:19 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:19 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:33 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:34 | ERROR    | src.external.ssl_checker:check:62 | Network error checking SSL for 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev: [Errno 11001] getaddrinfo failed
+2026-04-05 12:48:34 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev/BancoInternacional.html
+2026-04-05 12:48:35 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:48:35 | WARNING  | src.features.graph_features:extract:41 | Node 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev not found in graph. Returning default graph features.
+2026-04-05 12:48:35 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:48:35 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:48:35 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev/BancoInternacional.html
+2026-04-05 12:48:35 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:35 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-05 12:48:35 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: 5d699c6f-c047-4746-b7ed-fd9903d37d25-00-3pxsj5cqq1n2e.worf.replit.dev
+2026-04-05 12:48:35 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 12:48:39 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:48:39 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51099 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:48:41 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:48:45 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:48:45 | INFO     | logging:callHandlers:1762 | 127.0.0.1:59418 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:53:21 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65014 - "GET /health HTTP/1.1" 200
+2026-04-05 12:53:21 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65016 - "GET /health HTTP/1.1" 200
+2026-04-05 12:53:23 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:53:23 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:53:27 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:53:27 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61164 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:53:27 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61172 - "GET /health HTTP/1.1" 200
+2026-04-05 12:53:27 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61173 - "GET /health HTTP/1.1" 200
+2026-04-05 12:53:28 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:53:28 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61166 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:53:29 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 12:53:29 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 12:53:29 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 12:53:29 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 12:53:29 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:53:31 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:53:45 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:53:45 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 12:53:45 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 12:53:46 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 12:53:46 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 12:53:46 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 12:53:46 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 12:53:47 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 12:53:47 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 12:53:47 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 12:53:48 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 12:53:52 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:53:52 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61175 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 12:53:54 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 12:53:59 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 12:53:59 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60873 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 12:54:29 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 12:54:29 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 12:54:29 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 12:54:29 | INFO     | logging:callHandlers:1762 | Finished server process [12740]
+2026-04-05 12:55:04 | WARNING  | src.external.cache_manager:__init__:26 | Redis Cache unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.. Falling back to no-cache mode.
+2026-04-05 12:55:06 | INFO     | logging:callHandlers:1762 | Started server process [25820]
+2026-04-05 12:55:06 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 12:55:10 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 13:03:17 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63785 - "GET /health HTTP/1.1" 200
+2026-04-05 13:03:19 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 13:03:19 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 13:03:19 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 13:03:19 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 13:03:19 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 13:03:20 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 13:03:20 | INFO     | src.data.preprocessor:load:74 | Preprocessor models loaded from data/models
+2026-04-05 13:03:20 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 13:03:20 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 13:03:20 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 13:03:20 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 13:03:20 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 13:03:21 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-05 13:03:25 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 13:03:25 | INFO     | logging:callHandlers:1762 | Waiting for connections to close. (CTRL+C to force quit)
+2026-04-05 13:03:35 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 13:03:36 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 13:03:36 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 13:03:37 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 13:03:37 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 13:03:37 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 13:03:37 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 13:03:37 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 13:03:37 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 13:03:37 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: www.genrorst-dows.dnset.com
+2026-04-05 13:03:38 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 13:03:43 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 13:03:43 | INFO     | logging:callHandlers:1762 | 127.0.0.1:63787 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 13:03:43 | INFO     | logging:callHandlers:1762 | Finished server process [25820]
+2026-04-05 13:03:43 | ERROR    | logging:callHandlers:1762 | Traceback (most recent call last):
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\starlette\routing.py", line 747, in lifespan
+    await receive()
+  File "C:\Users\frank\AppData\Roaming\Python\Python312\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2026-04-05 13:03:48 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 13:03:50 | INFO     | logging:callHandlers:1762 | Started server process [27892]
+2026-04-05 13:03:50 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 13:03:54 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 13:04:23 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62550 - "GET /health HTTP/1.1" 200
+2026-04-05 13:04:25 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 13:04:25 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 13:04:25 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 13:04:25 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 13:04:25 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 13:04:25 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 13:04:25 | INFO     | src.data.preprocessor:load:74 | Preprocessor models loaded from data/models
+2026-04-05 13:04:25 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 13:04:25 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 13:04:25 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 13:04:25 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 13:04:25 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 13:04:26 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 13:04:26 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 13:04:27 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 13:04:27 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 13:04:27 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 13:04:27 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 13:04:27 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 13:04:27 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 13:04:27 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 13:04:31 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 13:04:31 | INFO     | logging:callHandlers:1762 | 127.0.0.1:62098 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 13:04:33 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 13:04:37 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05 13:04:37 | INFO     | logging:callHandlers:1762 | 127.0.0.1:54059 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 13:05:24 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-05 13:05:24 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-05 13:05:24 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-05 13:05:24 | INFO     | logging:callHandlers:1762 | Finished server process [27892]
+2026-04-05 13:05:30 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-05 13:05:32 | INFO     | logging:callHandlers:1762 | Started server process [4812]
+2026-04-05 13:05:32 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-05 13:05:32 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-05 13:05:42 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60380 - "GET /health HTTP/1.1" 200
+2026-04-05 13:05:44 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 13:05:44 | INFO     | logging:callHandlers:1762 | 127.0.0.1:61911 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 13:06:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51386 - "GET /health HTTP/1.1" 200
+2026-04-05 13:06:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51387 - "GET /health HTTP/1.1" 200
+2026-04-05 13:06:03 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-05 13:06:03 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-05 13:06:03 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-05 13:06:03 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-05 13:06:03 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-05 13:06:04 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-05 13:06:04 | INFO     | src.data.preprocessor:load:74 | Preprocessor models loaded from data/models
+2026-04-05 13:06:04 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-05 13:06:04 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 13:06:04 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-05 13:06:04 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-05 13:06:04 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-05 13:06:05 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-05 13:06:05 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-05 13:06:06 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-05 13:06:06 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 13:06:06 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-05 13:06:06 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 13:06:06 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 13:06:06 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-05 13:06:06 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-05 13:06:06 | INFO     | api.services.prediction_service:predict_single_url:178 | 💾 Results and feature vector persisted to DB (ID: d4ad8e93-bee6-43fb-be94-1463be5fbdcf)
+2026-04-05 13:06:06 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51389 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 13:06:08 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 13:06:08 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51393 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-05 13:06:13 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51396 - "GET /health HTTP/1.1" 200
+2026-04-05 13:06:14 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51397 - "GET /health HTTP/1.1" 200
+2026-04-05 13:06:16 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25
+2026-04-05 13:06:16 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25 ---
+2026-04-05 13:06:16 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25 ---
+2026-04-05 13:06:16 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.google.com
+2026-04-05 13:06:16 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25
+2026-04-05 13:06:17 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-05 13:06:17 | WARNING  | src.features.graph_features:extract:41 | Node www.google.com not found in graph. Returning default graph features.
+2026-04-05 13:06:17 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-05 13:06:17 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-05 13:06:17 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.google.com/search?client=opera-gx&hs=T7f&sca_esv=45a1b2d7224d82e0&sxsrf=ANbL-n5MjIpfzsCMjPp1bTlcmdWLzrYIHQ:1775368519280&q=sandeep+reddy+vanga+movies&si=AL3DRZEuwDHFIbGuzocR1XF9OA3cbYbfkJGEA926HTETpBIemBvHgKsCxCA1hElmbKPuHiIVF2M_Ca7HTichx0mDdkQDBjzFbz3m9B14clhxhKSjeH7mmUIAkDP4in1u8bRQOAJ6qJd3Gr5pBcUFBoIJgEkYv3ulJA%3D%3D&sa=X&ved=2ahUKEwinlr-Pg9aTAxVVSWwGHTbLATIQyNoBKAB6BAgsEAA&ictx=1&biw=1494&bih=707&dpr=1.25
+2026-04-05 13:06:17 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-05 13:06:17 | INFO     | api.services.prediction_service:predict_single_url:178 | 💾 Results and feature vector persisted to DB (ID: 7f44f812-4eec-482a-a025-0bd230af0771)
+2026-04-05 13:06:17 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51399 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-05 13:06:20 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-05 13:06:20 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51402 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:18:53 | INFO     | src.external.cache_manager:__init__:24 | Redis Cache initialized at localhost:6379
+2026-04-07 17:18:58 | INFO     | logging:callHandlers:1762 | Started server process [7760]
+2026-04-07 17:18:58 | INFO     | logging:callHandlers:1762 | Waiting for application startup.
+2026-04-07 17:19:02 | INFO     | logging:callHandlers:1762 | Application startup complete.
+2026-04-07 17:19:02 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65478 - "GET /health HTTP/1.1" 200
+2026-04-07 17:19:02 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65477 - "GET /health HTTP/1.1" 200
+2026-04-07 17:19:03 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65476 - "GET /health HTTP/1.1" 200
+2026-04-07 17:19:04 | INFO     | api.services.prediction_service:__init__:39 | Initializing Prediction Service...
+2026-04-07 17:19:04 | INFO     | src.features.pipeline:__init__:14 | Initializing Feature Engineering Pipeline...
+2026-04-07 17:19:04 | INFO     | src.graph.builder:__init__:48 | Initialized empty TGIS Graph.
+2026-04-07 17:19:04 | INFO     | src.graph.builder:load_graph:122 | Trust graph loaded from: data/graphs/domain_graph.gpickle (74 nodes, 42 edges)
+2026-04-07 17:19:04 | INFO     | src.models.ensemble:__init__:20 | Loading Ensemble Models...
+2026-04-07 17:19:05 | SUCCESS  | src.models.ensemble:__init__:29 | Ensemble Models Loaded Successfully.
+2026-04-07 17:19:05 | INFO     | src.data.preprocessor:load:74 | Preprocessor models loaded from data/models
+2026-04-07 17:19:05 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://www.genrorst-dows.dnset.com/
+2026-04-07 17:19:05 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://www.genrorst-dows.dnset.com/ ---
+2026-04-07 17:19:05 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://www.genrorst-dows.dnset.com/ ---
+2026-04-07 17:19:05 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: www.genrorst-dows.dnset.com
+2026-04-07 17:19:05 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: www.genrorst-dows.dnset.com
+2026-04-07 17:19:19 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: www.genrorst-dows.dnset.com
+2026-04-07 17:19:20 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for www.genrorst-dows.dnset.com: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-04-07 17:19:20 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://www.genrorst-dows.dnset.com/
+2026-04-07 17:19:21 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://www.genrorst-dows.dnset.com/: HTTPSConnectionPool(host='www.genrorst-dows.dnset.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)')))
+2026-04-07 17:19:21 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:19:21 | WARNING  | src.features.graph_features:extract:41 | Node www.genrorst-dows.dnset.com not found in graph. Returning default graph features.
+2026-04-07 17:19:21 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:19:21 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:19:22 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://www.genrorst-dows.dnset.com/
+2026-04-07 17:19:22 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-07 17:19:26 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:19:26 | INFO     | logging:callHandlers:1762 | 127.0.0.1:65480 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:19:29 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:19:29 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52354 - "GET /health HTTP/1.1" 200
+2026-04-07 17:19:32 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:19:33 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:19:33 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52352 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:19:36 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:19:36 | INFO     | logging:callHandlers:1762 | 127.0.0.1:52357 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:19:40 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51433 - "GET /health HTTP/1.1" 200
+2026-04-07 17:19:41 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51434 - "GET /health HTTP/1.1" 200
+2026-04-07 17:19:43 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://f-online.pages.dev
+2026-04-07 17:19:43 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://f-online.pages.dev ---
+2026-04-07 17:19:43 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://f-online.pages.dev ---
+2026-04-07 17:19:43 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: f-online.pages.dev
+2026-04-07 17:19:43 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: f-online.pages.dev
+2026-04-07 17:19:43 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-07 17:19:43 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: f-online.pages.dev
+2026-04-07 17:19:43 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://f-online.pages.dev
+2026-04-07 17:19:44 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:19:44 | WARNING  | src.features.graph_features:extract:41 | Node f-online.pages.dev not found in graph. Returning default graph features.
+2026-04-07 17:19:44 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:19:44 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:19:44 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://f-online.pages.dev
+2026-04-07 17:19:44 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: f-online.pages.dev
+2026-04-07 17:19:44 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-07 17:19:44 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: f-online.pages.dev
+2026-04-07 17:19:44 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-07 17:19:48 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:19:48 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51436 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:19:51 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:19:55 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:19:55 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51443 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:20:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51450 - "GET /health HTTP/1.1" 200
+2026-04-07 17:20:01 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51451 - "GET /health HTTP/1.1" 200
+2026-04-07 17:20:03 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://mail.top-ing.net/images/
+2026-04-07 17:20:03 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://mail.top-ing.net/images/ ---
+2026-04-07 17:20:03 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://mail.top-ing.net/images/ ---
+2026-04-07 17:20:03 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: mail.top-ing.net
+2026-04-07 17:20:03 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: mail.top-ing.net
+2026-04-07 17:20:06 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: mail.top-ing.net
+2026-04-07 17:20:20 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: mail.top-ing.net
+2026-04-07 17:20:21 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://mail.top-ing.net/images/
+2026-04-07 17:20:23 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:20:23 | WARNING  | src.features.graph_features:extract:41 | Node mail.top-ing.net not found in graph. Returning default graph features.
+2026-04-07 17:20:23 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:20:23 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:20:24 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://mail.top-ing.net/images/
+2026-04-07 17:20:24 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: SAFE ---
+2026-04-07 17:20:28 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:20:28 | INFO     | logging:callHandlers:1762 | 127.0.0.1:51453 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:20:30 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:20:34 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:20:34 | INFO     | logging:callHandlers:1762 | 127.0.0.1:58114 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:20:39 | INFO     | logging:callHandlers:1762 | 127.0.0.1:58119 - "GET /health HTTP/1.1" 200
+2026-04-07 17:20:39 | INFO     | logging:callHandlers:1762 | 127.0.0.1:58120 - "GET /health HTTP/1.1" 200
+2026-04-07 17:20:41 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for https://dotzzah.dew4.my.id/
+2026-04-07 17:20:41 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: https://dotzzah.dew4.my.id/ ---
+2026-04-07 17:20:41 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: https://dotzzah.dew4.my.id/ ---
+2026-04-07 17:20:41 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: dotzzah.dew4.my.id
+2026-04-07 17:20:41 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: dotzzah.dew4.my.id
+2026-04-07 17:20:52 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11001] getaddrinfo failed
+2026-04-07 17:20:52 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: dotzzah.dew4.my.id
+2026-04-07 17:20:52 | INFO     | src.external.dns_resolver:resolve:31 | Resolving DNS records for domain: dotzzah.dew4.my.id
+2026-04-07 17:21:06 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: dotzzah.dew4.my.id
+2026-04-07 17:21:07 | ERROR    | src.external.ssl_checker:check:62 | Network error checking SSL for dotzzah.dew4.my.id: [Errno 11001] getaddrinfo failed
+2026-04-07 17:21:07 | INFO     | src.features.content_features:extract:34 | Extracting content features for: https://dotzzah.dew4.my.id/
+2026-04-07 17:21:07 | WARNING  | src.features.content_features:extract:130 | Failed to extract content features for https://dotzzah.dew4.my.id/: HTTPSConnectionPool(host='dotzzah.dew4.my.id', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000147EB77A6C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2026-04-07 17:21:07 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:21:07 | WARNING  | src.features.graph_features:extract:41 | Node dotzzah.dew4.my.id not found in graph. Returning default graph features.
+2026-04-07 17:21:07 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:21:07 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:21:07 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: https://dotzzah.dew4.my.id/
+2026-04-07 17:21:07 | INFO     | src.external.whois_client:lookup:32 | Performing WHOIS lookup for domain: dotzzah.dew4.my.id
+2026-04-07 17:21:08 | ERROR    | logging:callHandlers:1762 | Error trying to connect to socket: closing socket - [Errno 11002] getaddrinfo failed
+2026-04-07 17:21:08 | WARNING  | src.external.whois_client:lookup:38 | No WHOIS record found for: dotzzah.dew4.my.id
+2026-04-07 17:21:08 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-07 17:21:12 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:21:12 | INFO     | logging:callHandlers:1762 | 127.0.0.1:58123 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:21:14 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:21:18 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:21:18 | INFO     | logging:callHandlers:1762 | 127.0.0.1:60857 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:21:20 | INFO     | logging:callHandlers:1762 | 127.0.0.1:49610 - "GET /health HTTP/1.1" 200
+2026-04-07 17:21:20 | INFO     | logging:callHandlers:1762 | 127.0.0.1:49611 - "GET /health HTTP/1.1" 200
+2026-04-07 17:21:23 | INFO     | api.routes.predict:predict_url:22 | API Request: POST /api/v1/predict for http://tracking.clinchbridge.com/tracking/click?d=v9urDqX0RkhZcYnw4Yfwlpgs9kdBAypSiNW-K19-6r-bgfc70p1CIRu50DZxkIB7ds-OXtS4K86bRouTt1fMAGybr-0ECeVJWVliOjqytEArMTDZhR8r1uWYamBJ_J9pyvpPGzDl6NX4yqA9jThJTWE1
+2026-04-07 17:21:23 | INFO     | api.services.prediction_service:predict_single_url:63 | --- 🛡️ Starting Prediction Request: http://tracking.clinchbridge.com/tracking/click?d=v9urDqX0RkhZcYnw4Yfwlpgs9kdBAypSiNW-K19-6r-bgfc70p1CIRu50DZxkIB7ds-OXtS4K86bRouTt1fMAGybr-0ECeVJWVliOjqytEArMTDZhR8r1uWYamBJ_J9pyvpPGzDl6NX4yqA9jThJTWE1 ---
+2026-04-07 17:21:23 | INFO     | src.features.pipeline:extract_all:29 | --- 🌀 Pipeline Execution Started: http://tracking.clinchbridge.com/tracking/click?d=v9urDqX0RkhZcYnw4Yfwlpgs9kdBAypSiNW-K19-6r-bgfc70p1CIRu50DZxkIB7ds-OXtS4K86bRouTt1fMAGybr-0ECeVJWVliOjqytEArMTDZhR8r1uWYamBJ_J9pyvpPGzDl6NX4yqA9jThJTWE1 ---
+2026-04-07 17:21:23 | INFO     | src.features.domain_features:extract:49 | Extracting domain features for: tracking.clinchbridge.com
+2026-04-07 17:21:23 | INFO     | src.external.ssl_checker:check:34 | Checking SSL certificate for domain: tracking.clinchbridge.com
+2026-04-07 17:21:23 | WARNING  | src.external.ssl_checker:check:59 | SSL handshake failed for tracking.clinchbridge.com: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tracking.clinchbridge.com'. (_ssl.c:1000)
+2026-04-07 17:21:23 | INFO     | src.features.content_features:extract:34 | Extracting content features for: http://tracking.clinchbridge.com/tracking/click?d=v9urDqX0RkhZcYnw4Yfwlpgs9kdBAypSiNW-K19-6r-bgfc70p1CIRu50DZxkIB7ds-OXtS4K86bRouTt1fMAGybr-0ECeVJWVliOjqytEArMTDZhR8r1uWYamBJ_J9pyvpPGzDl6NX4yqA9jThJTWE1
+2026-04-07 17:21:25 | INFO     | src.features.pipeline:extract_all:43 | --- ✅ Pipeline Execution Completed. Total Features: 50 ---
+2026-04-07 17:21:25 | WARNING  | src.features.graph_features:extract:41 | Node tracking.clinchbridge.com not found in graph. Returning default graph features.
+2026-04-07 17:21:25 | INFO     | src.graph.trust_propagation:calculate_trust_score:21 | Starting Trust Propagation (Iterations: 10, Damping: 0.3)
+2026-04-07 17:21:25 | SUCCESS  | src.graph.trust_propagation:calculate_trust_score:74 | Trust Propagation completed for all nodes.
+2026-04-07 17:21:25 | INFO     | src.external.safe_browsing:check_url:23 | Checking Google Safe Browsing for: http://tracking.clinchbridge.com/tracking/click?d=v9urDqX0RkhZcYnw4Yfwlpgs9kdBAypSiNW-K19-6r-bgfc70p1CIRu50DZxkIB7ds-OXtS4K86bRouTt1fMAGybr-0ECeVJWVliOjqytEArMTDZhR8r1uWYamBJ_J9pyvpPGzDl6NX4yqA9jThJTWE1
+2026-04-07 17:21:25 | SUCCESS  | api.services.prediction_service:predict_single_url:151 | --- ✅ Prediction Completed: PHISHING ---
+2026-04-07 17:21:29 | ERROR    | api.services.prediction_service:predict_single_url:181 | Database persistence failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:21:29 | INFO     | logging:callHandlers:1762 | 127.0.0.1:49613 - "POST /api/v1/predict HTTP/1.1" 200
+2026-04-07 17:21:32 | INFO     | api.routes.history:get_history:16 | API Request: GET /api/v1/history
+2026-04-07 17:21:36 | ERROR    | api.routes.history:get_history:27 | Failed to fetch analysis history: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-07 17:21:36 | INFO     | logging:callHandlers:1762 | 127.0.0.1:49622 - "GET /api/v1/history HTTP/1.1" 200
+2026-04-07 17:22:35 | INFO     | logging:callHandlers:1762 | Shutting down
+2026-04-07 17:22:35 | INFO     | logging:callHandlers:1762 | Waiting for application shutdown.
+2026-04-07 17:22:35 | INFO     | logging:callHandlers:1762 | Application shutdown complete.
+2026-04-07 17:22:35 | INFO     | logging:callHandlers:1762 | Finished server process [7760]

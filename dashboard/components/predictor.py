@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import time
+import plotly.express as px
 from typing import Dict, Any
 from components.explainer import render_deep_dive
 
@@ -69,16 +70,40 @@ def render_predictor(client):
             scores = result["model_scores"]
             
             # Map raw scores to risk probabilities (TGIS: high trust = low phishing)
-            chart_data = pd.DataFrame({
+            chart_df = pd.DataFrame({
                 "Model": ["Random Forest", "XGBoost", "TGIS Graph", "Ensemble Summary"],
-                "Phishing Probability": [
+                "Probability": [
                     scores["random_forest"], 
                     scores["xgboost"], 
                     1 - scores["tgis"], 
                     scores["ensemble"]
                 ]
             })
-            st.bar_chart(chart_data, x="Model", y="Phishing Probability", color="#4285f4")
+            
+            fig = px.bar(
+                chart_df, 
+                x="Model", 
+                y="Probability", 
+                color="Model",
+                color_discrete_map={
+                    "Random Forest": "#4285F4", 
+                    "XGBoost": "#34A853", 
+                    "TGIS Graph": "#FBBC05", 
+                    "Ensemble Summary": "#EA4335"
+                },
+                labels={"Probability": "Phishing Probability (0-1)"},
+                title="Verdict Confidence by Model Component"
+            )
+            
+            fig.update_layout(
+                margin=dict(t=30, b=0, l=0, r=0),
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                showlegend=False,
+                yaxis_range=[0, 1]
+            )
+            
+            st.plotly_chart(fig, use_container_width=True)
             
             # 3. Component Details (Graph vs external)
             st.divider()

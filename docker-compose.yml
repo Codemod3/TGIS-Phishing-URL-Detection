@@ -1,0 +1,69 @@
+services:
+  db:
+    image: postgres:15
+    container_name: phishing-db
+    restart: always
+    environment:
+      POSTGRES_USER: phishing_user
+      POSTGRES_PASSWORD: secure_password
+      POSTGRES_DB: phishing_db
+    ports:
+      - "5433:5432" # External 5433 to Internal 5432 (as per .env)
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - phishing-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: phishing-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - phishing-network
+
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    container_name: phishing-api
+    restart: always
+    depends_on:
+      - db
+      - redis
+    environment:
+      DATABASE_URL: postgresql://phishing_user:secure_password@db:5432/phishing_db
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      SAFE_BROWSING_API_KEY: ${SAFE_BROWSING_API_KEY}
+      SECRET_KEY: ${SECRET_KEY}
+    ports:
+      - "8000:8000"
+    networks:
+      - phishing-network
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: ./dashboard/Dockerfile
+    container_name: phishing-dashboard
+    restart: always
+    depends_on:
+      - api
+      - redis
+    environment:
+      API_URL: http://api:8000
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    ports:
+      - "8501:8501"
+    networks:
+      - phishing-network
+
+networks:
+  phishing-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
